@@ -41,7 +41,9 @@ function CreateOrder() {
 
   return (
     <div className="px-4 py-6">
-      <h2 className="mb-8 text-xl font-semibold">Ready to order? Let's go!</h2>
+      <h2 className="mb-8 text-xl font-semibold">
+        Ready to order? Let&apos;s go!
+      </h2>
 
       {/* <Form method="POST" action="/order/new"> */}
       <Form method="POST">
@@ -87,7 +89,7 @@ function CreateOrder() {
           </div>
 
           {!position.latitude && !position.longitude && (
-            <span className="absolute right-[3px] top-[3px] z-50  md:right-[5px] md:top-[5px]">
+            <span className="absolute right-[3px] top-[3px] z-50 md:right-[5px] md:top-[5px]">
               <Button
                 disabled={isLoadingAddress}
                 type="small"
